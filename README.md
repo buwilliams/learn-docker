@@ -4,7 +4,7 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
 
 ## Docker Nomenclature and Notes
 
-- `Docker Image` - the actual package, **artifact** which can be shared with others
+- `Docker Image` - the actual package, **artifact** which can be shared with others, docker images are built in layers via Dockerfile
 - `Docker Container` - a *running* instance of a docker image, file system is virtual, contains a port for communication
 - Docker run - only fetches the layers of a image it doesn't already have locally
 - Docker vs Virtual Machine
