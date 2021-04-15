@@ -11,7 +11,7 @@
 
 - [x] Finish docker tutorial
 - [x] Read existing PostHog docker compose
-- [x] List PostHog services, images, and sizes (3.99GB)
+- [x] List PostHog services, images, and sizes (399MB)
     - db -> postgres:12-alpine (156MB)
     - redis -> redis:5-alpine (29.3MB)
     - worker -> python:3.8-slim (107MB)
