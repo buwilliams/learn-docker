@@ -1,4 +1,4 @@
-# Learning Docker
+# Tiny PostHog
 
 The goal of this project is to have a tiny docker environment for localdev that works on Apple M1.
 
