@@ -21,13 +21,17 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
     - Automatically handles creating a common *docker network*
     - Docker compose is usually installed with docker so you already have it
 - `Docker Volumes`
-    - data persistent between docker restarts
-    - 3 docker volume types: specified, anonymous, and named volumes
-    - Typically use **named volumes**
-    - It's basically a filesystem mount between the host system and the docker container
+    - Provides data persistence between host machine and docker containers
+    - The data between volumes is replicated between the host and docker container volumes
+    - 3 docker volume types: specified, anonymous, and named volumes, named volumes on the host are managed by docker
+    - Production should use *named volumes*
     - Container Mongodb = /data/db
     - Container MySQL = /var/lib/myself
     - Container Postgres = /var/lib/postgres/data
+    - Host Windows = C:\ProgramData\docker\volumes
+    - Host Linux = /var/lib/docker/volumes/[hash]/_data
+    - Host Mac = /var/lib/docker/volumes/[hash]/_data
+        - `screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty` add access linux VM on mac where data is stored, `ctrl + a + k` to exit screen session
 
 ## Basic commands
 
@@ -98,7 +102,7 @@ CMD ["bash"]
 
  ## Related Resources
 
- - [Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://www.youtube.com/watch?v=X48VuDVv0do)
+ - [Kubernetes Tutorial for Beginners FULL COURSE in 4 Hours](https://www.youtube.com/watch?v=X48VuDVv0do) To manage distribution of contains across many servers
 
  ## Ideas
 
