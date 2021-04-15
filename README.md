@@ -24,12 +24,17 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
 - `docker run` run a docker container, it's two commands in one *docker pull* and *docker start*
 - `docker run -d` runs the docker container in *detach mode*
 - `docker run -p` binds the container to host port i.e. *-p6000:6370*, *-p[host]:[container]*
-- `docker start` start a container
+- `docker run --name` give the container a name so that you do not need to use the SHA
+- `docker run -d -it python` runs python images in *interactive terminal* mode
+- `docker run -e` runs an image with an environment variable
+- `docker start` start a container, retains the settings from the run command
 - `docker stop` - stops a container
 - `docker ps` shows *running* containers
 - `docker ps -a` shows *running and not-running* containers
-- `docker exec -it`
-- `docker logs`
+- `docker logs` shows the logs of the *running* container
+- `docker exec -it` runs the container with interactive terminal
+- `docker network ls` shows a list of the internal docker network
+- `docker network create` create a docker network
 
 ## First Dockerfile
 
