@@ -6,7 +6,7 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
 
 - `Docker Image` - the actual package, **artifact** which can be shared with others, docker images are built in layers via Dockerfile
 - `Docker Container` - a *running* instance of a docker image, file system is virtual, contains a port for communication
-- Docker run - only fetches the layers of a image it doesn't already have locally
+- Docker run - command which executes *pull* and *start* (only pulls images we do not have locally)
 - Docker vs Virtual Machine
     - Operating System = Hardware > OS Kernel (layer 1) > Applications (layer 2)
     - Docker = Virtualization of applications (layer 2)
