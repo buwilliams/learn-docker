@@ -25,5 +25,5 @@
     - worker -> python:3.8-slim (107MB)
     - web -> python:3.8-slim (107MB)
     - plugins -> posthog/plugin-server:0.15.4 (1.19GB) -> node:14
-- Issues for `docker compose -f docker-compose.dev.yml up`
+- [x] Issues for `docker compose -f docker-compose.dev.yml up`
     1. [Error: pg_config executable not found](https://stackoverflow.com/questions/11618898/pg-config-executable-not-found)
