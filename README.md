@@ -16,6 +16,10 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
 - Docker Port vs Host Port
     - Multiple containers may use the same port
     - Bind host port to docker port, i.e. host 3000 -> docker 3000, host 3001 -> docker 3000
+- Docker Compose
+    - Configuration file specifying *docker commands* to make it easier to work with
+    - Automatically handles creating a common *docker network*
+    - Docker compose is usually installed with docker so you already have it
 
 ## Basic commands
 
@@ -37,6 +41,10 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
 - `docker exec -it` runs the container with interactive terminal
 - `docker network ls` shows a list of the internal docker network
 - `docker network create` create a docker network
+
+## Docker Compose
+
+- `docker-compose -f mongo.yaml up`
 
 ## First Dockerfile
 
