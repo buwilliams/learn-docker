@@ -11,7 +11,7 @@
 
 - [x] Finish docker tutorial
 - [x] Read existing PostHog docker compose
-- [x] List PostHog services, images, and sizes (399GB)
+- [x] List PostHog services, images, and sizes (3.99GB)
     - db -> postgres:12-alpine (156MB)
     - redis -> redis:5-alpine (29.3MB)
     - worker -> python:3.8-slim (107MB)
@@ -25,3 +25,5 @@
     - worker -> python:3.8-slim (107MB)
     - web -> python:3.8-slim (107MB)
     - plugins -> posthog/plugin-server:0.15.4 (1.19BG) -> node:14
+- Issues for `docker compose -f docker-compose.dev.yml up`
+    1. [Error: pg_config executable not found](https://stackoverflow.com/questions/11618898/pg-config-executable-not-found)
