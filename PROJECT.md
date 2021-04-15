@@ -14,4 +14,4 @@
 
 ## Done
 
-- [-] Finish docker tutorial
+- [x] Finish docker tutorial
