@@ -86,3 +86,4 @@ CMD ["bash"]
 
  - It's possible to run only the containers that are needed for PostHog's EE
  - [Build Clickhouse for ARM64](https://clickhouse.tech/docs/en/development/build-cross-arm/)
+ - Is it possible to docker-compose conditionally based on architecture? If so, I think we have a solution for PostHog EE on Macbook Silicon/M1
