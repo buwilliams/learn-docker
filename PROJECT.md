@@ -11,3 +11,5 @@
 - [ ] Get Clickhouse version running on amd64 w/ tests
 - [ ] List sizes of images
     - *sizes go here*
+
+## Done
