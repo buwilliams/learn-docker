@@ -30,7 +30,7 @@ CMD ["bash"]
 - `git clone https://github.com/buwilliams/tiny-posthog.git`
 - `cd tiny-posthog`
 - `docker build .`
-- `docker run -it --name test [sha]`
+- `docker run -it --name test [sha]` find sha in the output from docker build
 
  ## Resources
 
