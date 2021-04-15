@@ -2,7 +2,6 @@
 
 ## Todo
 
-- [ ] Finish docker tutorial
 - [ ] Read existing PostHog docker compose
 - [ ] List services
     - *services go here*
@@ -14,3 +13,5 @@
     - *sizes go here*
 
 ## Done
+
+- [-] Finish docker tutorial
