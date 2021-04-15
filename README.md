@@ -20,7 +20,11 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
     - Configuration file specifying *docker commands* to make it easier to work with
     - Automatically handles creating a common *docker network*
     - Docker compose is usually installed with docker so you already have it
-- `Docker Volumes` persistent storage between docker restarts
+- `Docker Volumes`
+    - data persistent between docker restarts
+    - 3 docker volume types: specified, anonymous, and named volumes
+    - Typically use **named volumes**
+    - It's basically a filesystem mount between the host system and the docker container
 
 ## Basic commands
 
@@ -42,6 +46,10 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
 - `docker exec -it` runs the container with interactive terminal
 - `docker network ls` shows a list of the internal docker network
 - `docker network create` create a docker network
+- `docker build -t my-app:1.0 .` builds an image from a *Dockerfile* in the current directory
+- `docker rm` removes a docker container which you need to do before docker rmi
+- `docker rmi` removes a docker image, i.e. docker rmi my-app:1.0
+- `docker run -v` mounts host filesystem to docker container filesystem
 
 ## Docker Compose
 
@@ -84,6 +92,10 @@ CMD ["bash"]
  - [Creating your first Dockerfile, image and container](https://www.youtube.com/watch?v=hnxI-K10auY) great place to start
  - [Docker Tutorial for Beginners [FULL COURSE in 3 Hours]](https://www.youtube.com/watch?v=3c-iBn73dDE) most helpful
  - [Docker For Beginners: From Docker Desktop to Deployment](https://www.youtube.com/watch?v=i7ABlHngi1Q)
+
+ ## Related Resources
+
+ - [Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://www.youtube.com/watch?v=X48VuDVv0do)
 
  ## Ideas
 
