@@ -16,7 +16,7 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
 - Docker Port vs Host Port
     - Multiple containers may use the same port
     - Bind host port to docker port, i.e. host 3000 -> docker 3000, host 3001 -> docker 3000
-- Docker Compose
+- `Docker Compose`
     - Configuration file specifying *docker commands* to make it easier to work with
     - Automatically handles creating a common *docker network*
     - Docker compose is usually installed with docker so you already have it
@@ -81,3 +81,8 @@ CMD ["bash"]
  - [Creating your first Dockerfile, image and container](https://www.youtube.com/watch?v=hnxI-K10auY)
  - [Docker For Beginners: From Docker Desktop to Deployment](https://www.youtube.com/watch?v=i7ABlHngi1Q)
  - [Docker Tutorial for Beginners [FULL COURSE in 3 Hours]](https://www.youtube.com/watch?v=3c-iBn73dDE)
+
+ ## Ideas
+
+ - It's possible to run only the containers that are needed for PostHog's EE
+ - [Build Clickhouse for ARM64](https://clickhouse.tech/docs/en/development/build-cross-arm/)
