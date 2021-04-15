@@ -27,6 +27,8 @@ CMD ["bash"]
 
 ## Getting started
 
+- `git clone https://github.com/buwilliams/tiny-posthog.git`
+- `cd tiny-posthog`
 - `docker build .`
 - `docker run -it --name test [sha]`
 
