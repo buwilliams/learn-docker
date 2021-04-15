@@ -25,6 +25,11 @@ CMD ["bash"]
  - `docker start -ai [name]` start container interactively
  - `docker rm [name]` removes container
 
+## Getting started
+
+- `docker build .`
+- `docker run -it --name test [sha]`
+
  ## Resources
 
  - [Creating your first Dockerfile, image and container](https://www.youtube.com/watch?v=hnxI-K10auY)
