@@ -1,6 +1,6 @@
 # Tiny PostHog
 
-The goal of this project is to have a tiny docker environment for localdev that works on Apple M1.
+The goal of this project is to (1) have a tiny docker environment for localdev that works on Apple M1 and (2) learn Docker in the process
 
 ## First Dockerfile
 
