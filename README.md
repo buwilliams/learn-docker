@@ -16,13 +16,14 @@ CMD ["bash"]
 
 ## First commands
 
- - `docker build .` - builds the container
- - `docker run --name [name] [sha]` - installs the container
- - `docker run -it --name [name] [sha]` - installs the container and starts in interactive mode
- - `docker ps`
- - `docker stop [name]`
- - `docker start -ai [name]`
- - `docker rm [name]`
+ - `docker build .` builds the container
+ - `docker run --name [name] [sha]` installs the container
+ - `docker run -it --name [name] [sha]` installs the container and starts in interactive mode
+ - `docker ps` shows all the running containers
+ - `docker ps -a` shows all the running and exited containers
+ - `docker stop [name]` stop container
+ - `docker start -ai [name]` start container interactively
+ - `docker rm [name]` removes container
 
  ## Resources
 
