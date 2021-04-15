@@ -25,6 +25,9 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
     - 3 docker volume types: specified, anonymous, and named volumes
     - Typically use **named volumes**
     - It's basically a filesystem mount between the host system and the docker container
+    - Container Mongodb = /data/db
+    - Container MySQL = /var/lib/myself
+    - Container Postgres = /var/lib/postgres/data
 
 ## Basic commands
 
