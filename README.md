@@ -57,6 +57,8 @@ The goal of this project is to (1) have a tiny docker environment for localdev t
 - `docker rm` removes a docker container which you need to do before docker rmi
 - `docker rmi` removes a docker image, i.e. docker rmi my-app:1.0
 - `docker run -v` mounts host filesystem to docker container filesystem
+- `docker system prune` clean up any images, containers, volumes, and networks that are dangling
+- `docker system prune -a` any stopped containers and all unused images
 
 ## Docker Compose
 
